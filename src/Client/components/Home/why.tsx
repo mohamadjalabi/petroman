@@ -1,4 +1,3 @@
-import React from 'react';
 import { Row, Col, Card } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faWallet, faPeopleRoof } from '@fortawesome/free-solid-svg-icons'; // Import the Font Awesome icons

@@ -1,14 +1,8 @@
-import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 type Care = { name: string; image: string; color: string };
-type CareData = {
-  cares: {
-    Car_Care: Care[];
-  };
-};
 
-const careData: CareData = {
+const careData = {
   cares: {
     Car_Care: [
       { name: 'Diesel-Engine-Fluid', image: 'src/Client/assets/car-care/Diesel-engine-fluid-removebg-preview.png', color: 'blue' },
@@ -44,7 +38,7 @@ const CarCare = () => {
   return (
     <>
       <div className="coolants-container" id='care'>
-        {Object.keys(careData.cares).map(section => (
+        {(Object.keys(careData.cares) as (keyof typeof careData.cares)[]).map(section => (
           <div key={section} className="coolant-section">
             <h2 className="coolant-section-title">{section}</h2>
             <div className="coolant-items">

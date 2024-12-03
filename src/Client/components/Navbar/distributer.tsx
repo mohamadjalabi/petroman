@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 function DistributorsPage() {
     // const distributors = [
@@ -22,7 +22,7 @@ function DistributorsPage() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
         sendEmail(formData);
     };
@@ -52,7 +52,7 @@ function DistributorsPage() {
             },
             'GAhCQppo8IT6Mqaej'
         )
-        .then((response: emailjs.EmailJSResponseStatus) => {
+        .then((response: EmailJSResponseStatus) => {
             console.log('SUCCESS!', response.status, response.text);
             alert('Your request has been sent successfully.');
             setFormData({ name: '', email: '', phone: '', companyName: '', location: '', message: '' });

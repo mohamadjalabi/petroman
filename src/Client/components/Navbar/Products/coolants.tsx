@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 type Coolant = { name: string; image: string; color: string };
@@ -71,7 +70,7 @@ const Coolants = () => {
           <div key={section} className="coolant-section">
             <h2 className="coolant-section-title">{section}</h2>
             <div className="coolant-items">
-              {coolantsData.coolants[section].map(coolant => (
+              {coolantsData.coolants[section as keyof CoolantsData['coolants']].map(coolant => (
                 <div 
                   key={coolant.name} 
                   className="coolant-item" 

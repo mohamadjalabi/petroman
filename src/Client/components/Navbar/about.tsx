@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { EnvironmentOutlined, ExperimentOutlined, GlobalOutlined, HomeOutlined, InfoCircleOutlined, ProductOutlined, SafetyCertificateOutlined } from "@ant-design/icons"; // Import ProductOutlined from the appropriate library
+import { EnvironmentOutlined, ExperimentOutlined, GlobalOutlined, InfoCircleOutlined, SafetyCertificateOutlined } from "@ant-design/icons"; // Import ProductOutlined from the appropriate library
 
 const AboutUs: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);

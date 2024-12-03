@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ToolOutlined } from '@ant-design/icons'; // Import the maintenance icon from Ant Design
 
 function MaintenanceOverlay() {
