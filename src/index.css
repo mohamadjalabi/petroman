@@ -1700,6 +1700,9 @@ a{
     width: 100%;
   }
 }
+.ant-menu-dark.ant-menu-submenu-popup>.ant-menu{
+  font-size: 1.4rem !important;
+}
 
 
 .ant-float-btn-body {
