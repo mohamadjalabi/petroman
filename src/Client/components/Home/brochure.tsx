@@ -21,8 +21,8 @@ const BrochureViewer: React.FC = () => {
       {/* Title Section */}
       <div
         style={{
-          fontFamily: 'Tomorrow, sans-serif',
-          fontSize: '24px',
+          fontFamily: 'fixture_italiccondensed_bold,Tomorrow, sans-serif',
+          fontSize: '3rem',
           fontWeight: 'bold',
           marginBottom: '20px',
           textAlign: 'center',
@@ -48,8 +48,8 @@ const BrochureViewer: React.FC = () => {
           rel="noopener noreferrer"
           style={{
             padding: '12px 20px',
-            fontFamily: 'Tomorrow, sans-serif',
-            fontSize: '16px',
+            fontFamily: 'fixture_italiccondensed_bold,Tomorrow, sans-serif',
+            fontSize: '2rem',
             textDecoration: 'none',
             borderRadius: '5px',
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
@@ -67,8 +67,8 @@ const BrochureViewer: React.FC = () => {
           download="Petroman_Catalog.pdf"
           style={{
             padding: '12px 20px',
-            fontSize: '16px',
-            fontFamily: 'Tomorrow, sans-serif',
+            fontSize: '2rem',
+            fontFamily: 'fixture_italiccondensed_bold,Tomorrow, sans-serif',
             textDecoration: 'none',
             borderRadius: '5px',
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',

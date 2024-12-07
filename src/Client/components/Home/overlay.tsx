@@ -30,13 +30,13 @@ function MaintenanceOverlay() {
             <ToolOutlined 
                 style={{ fontSize: '4rem', color: '#FFD700', marginBottom: '20px' }} 
             /> {/* Maintenance Icon */}
-            <h1 style={{ fontSize: '2.5rem', textAlign: 'center', fontFamily: 'Tomorrow, sans-serif' }}>
+            <h1 style={{ fontSize: '2.5rem', textAlign: 'center',fontFamily: 'fixture_italiccondensed_bold,Tomorrow, sans-serif'}}>
                 Website Under Maintenance
             </h1>
-            <h4 style={{ fontSize: '1.2rem', textAlign: 'center', marginBottom: '20px', fontFamily: 'Tomorrow, sans-serif' }}>
+            <h4 style={{ fontSize: '1.2rem', textAlign: 'center', marginBottom: '20px',fontFamily: 'fixture_italiccondensed_bold,Tomorrow, sans-serif'}}>
                 We're still working on this website to make it amazing for you!
             </h4>
-            <h5 style={{ fontSize: '1.2rem', textAlign: 'center', marginBottom: '20px', fontFamily: 'Tomorrow, sans-serif' }}>
+            <h5 style={{ fontSize: '1.2rem', textAlign: 'center', marginBottom: '20px',fontFamily: 'fixture_italiccondensed_bold,Tomorrow, sans-serif'}}>
                 Please check back later.
             </h5>
             <button 

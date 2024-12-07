@@ -22,9 +22,9 @@ const Contact = () => {
           </div>
           <Divider className='divider' />
           <div className="more-info">
-            <h2>For More Info View Our Catalouge <FilePdfOutlined /></h2>
+            <h2>For More Info View Our Catalog <FilePdfOutlined /></h2>
             <p>
-             <strong>Catalouge:</strong> <a href="/catalog" rel="noopener noreferrer">Prestone Catalouge</a>
+             <strong>Catalog:</strong> <a href="/catalog" rel="noopener noreferrer">Petroman Catalog</a>
             </p>
           </div>
           <Divider className='divider' />

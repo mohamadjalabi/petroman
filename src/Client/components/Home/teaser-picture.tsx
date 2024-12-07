@@ -95,7 +95,7 @@ const Teaser: React.FC = () => {
             <img src={obj12} alt="OBJ-12" />
             <div className="content">
               <div className="title">High-Scale</div>
-              <div className="topic">Warior</div>
+              <div className="topic">Warrior</div>
               <div className="des">Extreme<br></br>Reliability.</div>
             </div>
           </div>
