@@ -2,37 +2,36 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
+import event1 from '../../assets/events/event1.jpg';
+import event2 from '../../assets/events/event2.jpg';
+import event3 from '../../assets/events/event3.jpg';
+import event4 from '../../assets/events/event4.jpg';
+
 const eventsData = [
     {
         id: 1,
-        image: 'src/Client/assets/events/event1.jpg', // Replace with your image path
-        description: 'Event 1: Company product launch event with keynote presentations.',
-        date: '2023-09-22',
+        image:event1, // Replace with your image path
+        description: 'Company product launch event with keynote presentations.',
+        date: '10-12 Dec. 2024',
     },
     {
         id: 2,
-        image: 'src/Client/assets/events/event2.jpg', // Replace with your image path
-        description: 'Event 2: Annual shareholders meeting and discussion on future plans.',
-        date: '2023-10-01',
+        image:event2, // Replace with your image path
+        description: 'Annual shareholders meeting and discussion on future plans.',
+        date: '10-12 Dec. 2024',
     },
     {
         id: 3,
-        image: 'src/Client/assets/events/event3.jpg', // Replace with your image path
-        description: 'Event 3: Community outreach and social responsibility event.',
-        date: '2023-09-22',
+        image:event3, // Replace with your image path
+        description: 'Community outreach and social responsibility event.',
+        date: '10-12 Dec. 2024',
     },
     {
         id: 4,
-        image: 'src/Client/assets/events/event4.jpg', // Replace with your image path
-        description: 'Event 4: Regional product roadshow and exhibition.',
-        date: '2023-10-01',
+        image:event4, // Replace with your image path
+        description: 'Regional product roadshow and exhibition.',
+        date: '10-12 Dec. 2024',
     },
-    {
-        id: 5,
-        image: 'src/Client/assets/events/event5.jpg', // Replace with your image path
-        description: 'Event 5: International conference and networking event.',
-        date: '2023-09-22',
-    }
 ];
 
 function Events() {

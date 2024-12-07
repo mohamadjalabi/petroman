@@ -3,6 +3,9 @@ import { CheckCircleFilled, WarningFilled } from '@ant-design/icons';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+import engine1 from '../../assets/Engine.png';
+import engine2 from '../../assets/engine (2).png';
+
 const Engine = () => {
   return (
     <div className="engine-container">
@@ -54,14 +57,14 @@ const Engine = () => {
       </section>
           </div>
           <div className="engine-image-container">
-            <img src="src/Client/assets/engine (2).png" alt="Engine" className="engine-image" />
+            <img src={engine2} alt="Engine" className="engine-image" />
           </div>
         </Col>
 
         {/* Right Side: Engine Image and Solutions */}
         <Col xs={24} md={12} className="solutions-column">
           <div className="engine-image-container">
-            <img src="src/Client/assets/Engine.png" alt="Engine" className="engine-image" />
+            <img src={engine1} alt="Engine" className="engine-image" />
           </div>
           <div className="solutions-description">
             <h2>Our <br></br> Solutions</h2>

@@ -18,8 +18,6 @@ function Home() {
                 <div className='q4'>
                 <Engine />
                 </div>
-                {/* <div className='q5' id=''>
-                </div> */}
             </div>
         </>
     );

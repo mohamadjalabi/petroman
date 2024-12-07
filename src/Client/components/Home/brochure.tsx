@@ -1,57 +1,89 @@
 import React from 'react';
 
+import pdf from "../../assets/Petroman.pdf"
+
 const BrochureViewer: React.FC = () => {
   return (
     <div
       style={{
-        height: '120vh',
+        marginTop: '70px',
         width: '100%',
         display: 'flex',
+        height: '30vh',
+        justifyContent: 'center',
         flexDirection: 'column',
-        backgroundColor: '#f4f4f9', // Light background for the page
+        alignItems: 'center',
+        backgroundColor: '#f4f4f9',
         padding: '20px',
         boxSizing: 'border-box',
       }}
     >
-      {/* Header Section */}
+      {/* Title Section */}
       <div
         style={{
-          marginTop: '70px',
+          fontFamily: 'Tomorrow, sans-serif',
+          fontSize: '24px',
+          fontWeight: 'bold',
+          marginBottom: '20px',
+          textAlign: 'center',
         }}
-        className='title'
       >
-        Petroman Brochure
+        Petroman Catalog Actions
       </div>
 
-      {/* PDF Container */}
+      {/* Buttons Section */}
       <div
         style={{
-          flex: 1,
-          border: '2px solid #004d40',
-          borderRadius: '8px',
-          overflow: 'hidden',
-          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '20px',
         }}
       >
-        <iframe
-          src="\src\Client\assets\Petroman.pdf"
+        {/* View PDF Button */}
+        <a
+                className='buttons'
+
+          href={pdf}  // Make sure the path is correct
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
-            width: '100%',
-            height: '100%',
-            border: 'none',
+            padding: '12px 20px',
+            fontFamily: 'Tomorrow, sans-serif',
+            fontSize: '16px',
+            textDecoration: 'none',
+            borderRadius: '5px',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s ease',
           }}
-          title="Petroman Brochure"
-        />
-      </div>
+        >
+          View PDF
+        </a>
 
-      {/* Footer Section */}
-      <div className='title' style={{
-          marginTop: '20px',
-        }}>
-        Scroll to view the full brochure or download it for offline reading.
+        {/* Download PDF Button */}
+        <a
+        className='buttons'
+          href={pdf}  // Make sure the path is correct
+          download="Petroman_Catalog.pdf"
+          style={{
+            padding: '12px 20px',
+            fontSize: '16px',
+            fontFamily: 'Tomorrow, sans-serif',
+            textDecoration: 'none',
+            borderRadius: '5px',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s ease',
+          }}
+        >
+          Download PDF
+        </a>
       </div>
     </div>
   );
 };
 
 export default BrochureViewer;
+
+
+

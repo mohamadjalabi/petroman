@@ -6,20 +6,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// const { Option } = Select;
+import allproducts from '../../assets/All-Products.png';
+import g10 from '../../assets/g10.png';
+import g11 from '../../assets/g11.png';
+import g12 from '../../assets/g12.png';
+import engineoil from '../../assets/engine-oil.png';
 
-// const swipeData = {
-//   swipes: {
-//     Swipe: [
-//       { name: 'All-Products', image: 'src/Client/assets/All-Products.png', path: '/products' },
-//       { name: 'Engine-Oil', image: 'src/Client/assets/engine-oil.png', path: '/oil-lubricants' },
-//       { name: 'Motor-Oil', image: 'src/Client/assets/oil.png', path: '/oil-lubricants' },
-//       { name: 'G10-Coolants', image: 'src/Client/assets/g10.png', path: '/coolants' },
-//       { name: 'G11-Coolants', image: 'src/Client/assets/g11.png', path: '/coolants' },
-//       { name: 'G12-Coolants', image: 'src/Client/assets/g12.png', path: '/coolants' },
-//     ],
-//   }
-// };
 
 const Searcher = () => {
   const navigate = useNavigate();
@@ -47,7 +39,7 @@ const Searcher = () => {
             <label htmlFor="s1" id="slide1">
                 <div className="card">
                           <div className="image">
-                            <img src="src\Client\assets\All-Products.png" alt="Nike SuperRep Go"></img>
+                            <img src={allproducts}></img>
                             <div className="dots">
                                 <div></div>
                                 <div></div>
@@ -56,14 +48,8 @@ const Searcher = () => {
                           </div>
                         <div className="infos">
                             {/* <span className="name">Nike SuperRep Go</span> */}
-                            <span className="lorem">Lorem ipsum lorem dolor sit amet</span>
+                            <span className="lorem">View More</span>
                             <a href="/events" className="btn-details">OUR EVENTS</a>
-                            <div className="actions">
-                                <i className="fa fa-shopping-cart"></i>
-                                <i className="fa fa-heart"></i>
-                                <i className="fa fa-bookmark"></i>
-                                <i className="fa fa-share"></i>
-                            </div>
                         </div>
                 </div>
             </label>
@@ -71,7 +57,7 @@ const Searcher = () => {
             <label htmlFor="s2" id="slide2">
                 <div className="card">
                           <div className="image">
-                            <img src="src\Client\assets\g12.png" alt="Nike SuperRep Go"></img>
+                            <img src={g12}></img>
                             <div className="dots">
                                 <div></div>
                                 <div></div>
@@ -80,15 +66,9 @@ const Searcher = () => {
                           </div>
                         <div className="infos">
                             {/* <span className="name">Nike SuperRep Go</span> */}
-                            <span className="lorem">Lorem ipsum lorem dolor sit amet</span>
+                            <span className="lorem">View More</span>
 
-                            <a href="/events" className="btn-details">OUR EVENTS</a>
-                            <div className="actions">
-                                <i className="fa fa-shopping-cart"></i>
-                                <i className="fa fa-heart"></i>
-                                <i className="fa fa-bookmark"></i>
-                                <i className="fa fa-share"></i>
-                            </div>
+                            <a href="/oil-lubricants" className="btn-details">OUR PRODUCTS</a>
                         </div>
                 </div>
             </label>
@@ -96,7 +76,7 @@ const Searcher = () => {
             <label htmlFor="s3" id="slide3">
                 <div className="card">
                           <div className="image">
-                            <img src="src\Client\assets\g11.png" alt="Nike SuperRep Go"></img>
+                            <img src={g11}></img>
                             <div className="dots">
                                 <div></div>
                                 <div></div>
@@ -105,15 +85,9 @@ const Searcher = () => {
                           </div>
                         <div className="infos">
                             {/* <span className="name">Nike SuperRep Go</span> */}
-                            <span className="lorem">Lorem ipsum lorem dolor sit amet</span> 
+                            <span className="lorem">View More</span> 
 
-                            <a href="/events" className="btn-details">OUR EVENTS</a>
-                            <div className="actions">
-                                <i className="fa fa-shopping-cart"></i>
-                                <i className="fa fa-heart"></i>
-                                <i className="fa fa-bookmark"></i>
-                                <i className="fa fa-share"></i>
-                            </div>
+                            <a href="/car-care" className="btn-details">OUR PRODUCTS</a>
                         </div>
                 </div>
             </label>
@@ -121,7 +95,7 @@ const Searcher = () => {
             <label htmlFor="s4" id="slide4">
                 <div className="card">
                           <div className="image">
-                            <img src="src\Client\assets\g10.png" alt="Nike SuperRep Go"></img>
+                            <img src={g10}></img>
                             <div className="dots">
                                 <div></div>
                                 <div></div>
@@ -130,15 +104,9 @@ const Searcher = () => {
                           </div>
                         <div className="infos">
                             {/* <span className="name">Nike SuperRep Go</span>*/}
-                            <span className="lorem">Lorem ipsum lorem dolor sit amet</span> 
+                            <span className="lorem">View More</span> 
 
-                            <a href="/events" className="btn-details">OUR EVENTS</a>
-                            <div className="actions">
-                                <i className="fa fa-shopping-cart"></i>
-                                <i className="fa fa-heart"></i>
-                                <i className="fa fa-bookmark"></i>
-                                <i className="fa fa-share"></i>
-                            </div>
+                            <a href="/coolants" className="btn-details">OUR PRODUCTS</a>
                         </div>
                 </div>
             </label>
@@ -146,7 +114,7 @@ const Searcher = () => {
             <label htmlFor="s5" id="slide5">
                 <div className="card">
                           <div className="image">
-                            <img src="src\Client\assets\engine-oil.png" alt="Nike SuperRep Go"></img>
+                            <img src={engineoil}></img>
                             <div className="dots">
                                 <div></div>
                                 <div></div>
@@ -155,15 +123,9 @@ const Searcher = () => {
                           </div>
                         <div className="infos">
                             {/* <span className="name">Nike SuperRep Go</span>*/}
-                            <span className="lorem">Lorem ipsum lorem dolor sit amet</span>
+                            <span className="lorem">View More</span>
 
                             <a href="/events" className="btn-details">OUR EVENTS</a>
-                            <div className="actions">
-                                <i className="fa fa-shopping-cart"></i>
-                                <i className="fa fa-heart"></i>
-                                <i className="fa fa-bookmark"></i>
-                                <i className="fa fa-share"></i>
-                            </div>
                         </div>
                 </div>
             </label>

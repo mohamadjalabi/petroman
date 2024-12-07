@@ -1,12 +1,15 @@
 import { Row, Col, Divider } from 'antd';
 import { ContactsOutlined, FilePdfOutlined } from '@ant-design/icons';
 
+import qrcode from '../../assets/qr-code (2).png';
+import made from '../../assets/made-in-oman.png';
+
 const Contact = () => {
   return (
     <div className="contact-us" id='contact-us-section'>
       <Row gutter={[16, 16]}>
         <Col xs={24} sm={25} md={8}>
-          <img src="src\Client\assets\qr-code (2).png" alt="QR Code" className="qr-code" />
+          <img src={qrcode} alt="QR Code" className="qr-code" />
         </Col>
         <Col xs={24} sm={12} md={16}>
           <div className="contact-info">
@@ -33,7 +36,7 @@ const Contact = () => {
                 Al Buraimi Industrial Area - P.O. Box 947, Plot No. 322
               </p>
             </strong>
-            <img src="src\Client\assets\made-in-oman.png" alt="Made in Oman" className="made-in-oman" />
+            <img src={made} alt="Made in Oman" className="made-in-oman" />
           </div>
         </Col>
       </Row>

@@ -14,11 +14,14 @@ import Contact from './Client/components/Home/contact';
 import AboutUs from './Client/components/Navbar/about';
 import BrochureViewer from './Client/components/Home/brochure';
 import MaintenanceOverlay from './Client/components/Home/overlay';
+import ScrollToTopButton from './Client/components/Home/ScrollToTopButton';
+import OilAndLubricantsInfo from './Client/components/Navbar/Products/oil-lubricants-info';
 function App() {
     return (
         <>
         <MaintenanceOverlay />
         <Router>
+        <ScrollToTopButton />
         <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -32,6 +35,7 @@ function App() {
                 <Route path="/products" element={<Products />} />
                 <Route path='/about' element={<AboutUs />} />
                 <Route path="/car-care-info/:careName" element={<CarCareInfo />} />
+                <Route path="/oil-lubricants-info/:oillubricantName" element={<OilAndLubricantsInfo />} />
                 <Route path="/coolants-info/:coolantName" element={<CoolantsInfo />} />
             </Routes>
         </Router>
