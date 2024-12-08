@@ -45,7 +45,7 @@ const CarCare = () => {
       <div className="coolants-container" id='care'>
         {(Object.keys(careData.cares) as (keyof typeof careData.cares)[]).map(section => (
           <div key={section} className="coolant-section">
-            <h2 className="coolant-section-title">{section.replace('_', ' ')}</h2>
+            <h2 className="coolant-section-title">{section.replace(/_/g, ' ')}</h2>
             <div className="coolant-items">
               {careData.cares[section].map((care: Care) => (
                 <div
@@ -56,7 +56,7 @@ const CarCare = () => {
                   <div className={getColorClass(care.color)}>
                     <img src={care.image} alt={care.name} className="coolant-image" />
                   </div>
-                  <p className="coolant-name">{care.name}</p>
+                  <p className="coolant-name">{care.name.replace(/-/g, " ")}</p>
                   <h5>Click For More</h5>
                 </div>
               ))}

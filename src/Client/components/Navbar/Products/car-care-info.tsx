@@ -54,7 +54,7 @@ const CarCareInfo = () => {
               <img src={care.image} alt={care.name} className="care-info-item-image" />
             </div>
             <div className="care-info-item-details">
-              <h2 className=" coolant-name care-info-item-title">{care.name}</h2>
+              <h2 className=" coolant-name care-info-item-title">{care.name.replace(/-/g, ' ')}</h2>
               <p className=" coolant-name care-info-item-description">{care.description}</p>
             </div>
           </div>

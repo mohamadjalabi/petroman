@@ -92,7 +92,7 @@ const Coolants = () => {
       <div className="coolants-container" id='coolant'>
         {Object.keys(coolantsData.coolants).map(section => (
           <div key={section} className="coolant-section">
-            <h2 className="coolant-section-title">{section.replace('_', ' ')}</h2>
+            <h2 className="coolant-section-title">{section.replace(/_/g, ' ')}</h2>
             <div className="coolant-items">
               {coolantsData.coolants[section as keyof CoolantsData['coolants']].map(coolant => (
                 <div 
