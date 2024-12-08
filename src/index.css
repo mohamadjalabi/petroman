@@ -850,7 +850,7 @@ input:focus, textarea:focus {
 }
 
 .event-description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #555;
   margin-bottom: 10px;
 }
@@ -873,10 +873,7 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 768px) {
-  .events-title {
-      font-size: 1.5rem;
-      /* color: white; */
-  }
+
 
   .event-image {
       max-width: 100%;
@@ -889,10 +886,7 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 480px) {
-  .events-title {
-      font-size: 1.2rem;
-      /* color: white; */
-  }
+
 
   .event-details {
       font-size: 0.8rem;
