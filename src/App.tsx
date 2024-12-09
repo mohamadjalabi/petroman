@@ -13,13 +13,13 @@ import Searcher from './Client/components/Home/searcher';
 import Contact from './Client/components/Home/contact';
 import AboutUs from './Client/components/Navbar/about';
 import BrochureViewer from './Client/components/Home/brochure';
-import MaintenanceOverlay from './Client/components/Home/overlay';
+// import MaintenanceOverlay from './Client/components/Home/overlay';
 import ScrollToTopButton from './Client/components/Home/ScrollToTopButton';
 import OilAndLubricantsInfo from './Client/components/Navbar/Products/oil-lubricants-info';
 function App() {
     return (
         <>
-        <MaintenanceOverlay />
+        {/* <MaintenanceOverlay /> */}
         <Router>
         <ScrollToTopButton />
         <Navbar />
