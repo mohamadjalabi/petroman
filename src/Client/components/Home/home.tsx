@@ -5,7 +5,7 @@ import WhyChooseUs from './why';
 function Home() {
     return (
         <>
-            <div className='container'>
+            <div className='home-container'>
                 <div className='q1'>
                 <Searcher />
                 </div>
