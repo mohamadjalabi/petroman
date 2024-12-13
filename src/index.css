@@ -880,11 +880,45 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 480px) {
-
-
+  /* .q1{
+    display: none;
+  } */
   .event-details {
       font-size: 0.8rem;
   }
+}
+
+.ad-banner {
+  width: auto;
+  background-color: #f9c74f; /* Gold color */
+  color: #000; /* Black text */
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'fixturecondensed_bold','fixture_italiccondensed_bold','Tomorrow', sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.ad-banner:hover {
+  color: #7f3a3a; /* Black text */
+  text-decoration: underline;
+  .close-ad{
+    color: #7f3a3a;
+  }
+}
+
+.ad-banner .close-ad {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
 }
 
 
